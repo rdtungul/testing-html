@@ -153,8 +153,13 @@ HERO SECTION
   position: relative;
   z-index: 1;
 }
+nav a {
+  color: var(--primary6-color);
+  text-decoration: none;
+}
+
 .text-center,
-.text-containera {
+.text-container {
   width: 100vw;
   max-width: var(--max-width);
 }
