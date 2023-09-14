@@ -154,7 +154,7 @@ HERO SECTION
   z-index: 1;
 }
 .text-center,
-.text-container {
+.text-containera {
   width: 100vw;
   max-width: var(--max-width);
 }
