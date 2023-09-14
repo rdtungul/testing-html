@@ -40,7 +40,8 @@ h3,
 h4,
 h5,
 h6,
-.nav-links {
+.nav-links,
+.top-nav-links {
   letter-spacing: var(--spacing);
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -74,6 +75,10 @@ Homepage
 }
 .btn:hover {
   background: var(--primary4-color);
+  color: var(--primary7-color);
+}
+ul a:hover {
+  color: var(--primary7-color);
 }
 
 .products-btn {
@@ -144,16 +149,18 @@ HERO SECTION
   margin-top: 50px;
 }
 /* Navbar */
-.nav {
-  /* height: 5rem; */
-  /* display: flex; */
-  /* align-items: right; */
+.nav,
+.top-nav {
   justify-content: center;
-  /* background: transparent; */
   position: relative;
   z-index: 1;
 }
-nav a {
+.top-nav {
+  background-color: var(--primary1-color);
+  padding: 10px;
+}
+nav a,
+.top-nav a {
   color: var(--primary6-color);
   text-decoration: none;
 }
@@ -168,17 +175,16 @@ nav a {
   justify-content: space-between;
   align-items: center;
 }
-.nav-links {
+.nav-links,
+.top-nav-links {
   display: none;
   list-style-type: none;
-  /* justify-content: right; */
 }
 .link {
   height: 100%;
   background: transparent;
   border-color: transparent;
   font-size: 1.1rem;
-  /* color: white; */
   text-transform: capitalize;
   letter-spacing: 1px;
   width: 10rem;
@@ -200,12 +206,20 @@ nav a {
     justify-self: right;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-    /* margin-right: 20px; */
     display: grid;
     justify-items: center;
     align-items: stretch;
-    .nav-links li {
-      height: 100%;
-    }
+  }
+  .nav-links li {
+    height: 100%;
+  }
+  .top-nav-links {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+    justify-items: right;
+  }
+  .top-nav-links a {
+    font-size: 12px;
+    text-decoration: none;
   }
 }
