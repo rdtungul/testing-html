@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6,
-nav {
+.nav-links {
   letter-spacing: var(--spacing);
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -96,6 +96,20 @@ Top Navbar
 
 /*
 =============== 
+SECTIONS
+===============
+*/
+#hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*
+=============== 
 HERO SECTION
 ===============
 */
@@ -139,7 +153,8 @@ HERO SECTION
   position: relative;
   z-index: 1;
 }
-.text-center {
+.text-center,
+.text-container {
   width: 100vw;
   max-width: var(--max-width);
 }
